@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Regras, dicas e links do servidor DayZ Xbox Brasil Veteranos.">
+<meta name="theme-color" content="#0c0c0c">
+<meta property="og:title" content="Regras · Brasil Veteranos">
+<meta property="og:description" content="Regras, dicas e links do servidor DayZ Xbox Brasil Veteranos.">
+<meta property="og:type" content="website">
+<title>Brasil Veteranos</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+
+    :root {
+        --bg-color: #0c0c0c;
+        --card-bg: rgba(25, 25, 25, 0.7);
+        --border-color: rgba(255, 255, 255, 0.1);
+        --primary-red: #ff3e3e;
+        --secondary-red: #8b0000;
+        --success-green: #00ff88;
+        --accent-blue: #00a2ff;
+        --accent-gold: #ffb800;
+        --text-main: #ffffff;
+        --text-dim: #b0b0b0;
+        --glass-blur: blur(12px);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Outfit', sans-serif; }
+
+    body {
+        background: var(--bg-color);
+        background-image:
+            radial-gradient(circle at 20% 20%, rgba(139, 0, 0, 0.18) 0%, transparent 42%),
+            radial-gradient(circle at 80% 80%, rgba(0, 162, 255, 0.05) 0%, transparent 40%);
+        color: var(--text-main);
+        line-height: 1.6;
+        overflow-x: hidden;
+        min-height: 100vh;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    header { text-align: center; margin-bottom: 15px; animation: fadeInDown 0.8s ease-out; }
+
+    .logo-container {
+        display: inline-block;
+        padding: 15px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.05);
+        margin-bottom: 15px;
+        border: 1px solid var(--border-color);
+    }
+
+    h1 {
+        font-size: 2.3rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background: linear-gradient(to right, #fff, #ff3e3e);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle { color: var(--text-dim); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 4px; }
+
+    .card {
+        background: var(--card-bg);
+        backdrop-filter: var(--glass-blur);
+        -webkit-backdrop-filter: var(--glass-blur);
+        border: 1px solid var(--border-color);
+        border-radius: 20px;
+        padding: 25px;
+        transition: transform 0.3s ease, border-color 0.3s ease;
+        animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    .card:hover { transform: translateY(-5px); border-color: rgba(255, 62, 62, 0.3); }
+
+    .card-title {
+        display: flex; align-items: center; gap: 12px;
+        font-size: 1.2rem; font-weight: 600; margin-bottom: 15px;
+        border-bottom: 1px solid var(--border-color); padding-bottom: 10px;
+    }
+
+    .permitted { border-left: 4px solid var(--success-green); }
+    .prohibited { border-left: 4px solid var(--primary-red); }
+
+    ul { list-style: none; }
+    li { margin-bottom: 12px; padding-left: 22px; position: relative; font-size: 0.95rem; color: var(--text-dim); }
+    .permitted li::before { content: "✓"; position: absolute; left: 0; color: var(--success-green); font-weight: bold; }
+    .prohibited li::before { content: "✕"; position: absolute; left: 0; color: var(--primary-red); font-weight: bold; }
+
+    .observation-box {
+        background: rgba(255, 62, 62, 0.06);
+        border-radius: 12px; padding: 15px; margin-top: 15px;
+        font-size: 0.85rem; border: 1px dashed rgba(255, 62, 62, 0.35);
+    }
+
+    .link-button {
+        display: flex; align-items: center; justify-content: center; gap: 12px;
+        background: linear-gradient(45deg, #25D366, #128C7E);
+        color: white; text-decoration: none; padding: 18px; border-radius: 15px;
+        font-weight: 600; transition: filter 0.3s ease, transform 0.2s ease;
+    }
+    .link-button.whatsapp-news { background: linear-gradient(45deg, #128C7E, #075E54); }
+    .link-button.whatsapp-chat { background: linear-gradient(45deg, #25D366, #128C7E); }
+    .link-button.discord { background: linear-gradient(45deg, #5865F2, #4752C4); }
+    .link-button.arsenal { background: linear-gradient(45deg, #8b0000, #ff3e3e); }
+    .link-button:hover { filter: brightness(1.1); transform: scale(1.02); }
+
+    footer { text-align: center; color: var(--text-dim); font-size: 0.8rem; margin-top: 15px; padding-bottom: 40px; }
+
+    @keyframes fadeInDown { from { opacity: 0.4; transform: translateY(-16px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeInUp { from { opacity: 0.4; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+    .card:nth-child(2) { animation-delay: 0.05s; }
+    .card:nth-child(3) { animation-delay: 0.1s; }
+    .card:nth-child(4) { animation-delay: 0.15s; }
+    .card:nth-child(5) { animation-delay: 0.2s; }
+
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+    @media (max-width: 480px) { h1 { font-size: 1.8rem; } .card { padding: 20px; } }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="logo-container">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM11 7H13V13H11V7ZM11 15H13V17H11V15Z" fill="#ff3e3e" />
+            </svg>
+        </div>
+        <h1>Brasil Veteranos</h1>
+        <p class="subtitle">DayZ Xbox · Sentinela 24/7</p>
+    </header>
+
+    <section class="card permitted">
+        <div class="card-title"><span>🛡️</span> ESTÁ PERMITIDO</div>
+        <ul>
+            <li>Construção livre em qualquer lugar do mapa (menos no bunker)</li>
+            <li>Raid tático — só aos sábados, das 20h às 22h</li>
+            <li>Horta <strong>dentro da sua base</strong> (ou da base do seu clã)</li>
+            <li>Fogueira <strong>dentro da sua base</strong>, à vontade</li>
+            <li>Roletar cadeado</li>
+        </ul>
+    </section>
+
+    <section class="card prohibited">
+        <div class="card-title"><span>⚔️</span> ESTÁ PROIBIDO</div>
+        <ul>
+            <li>Fazer horta <strong>fora</strong> de qualquer base</li>
+            <li>Fogueira fora da base — 2 fogueiras no intervalo de 10 minutos</li>
+            <li>Glitch com emotes, skywalk ou andar debaixo do mapa</li>
+            <li>Desconectar <strong>dentro do bunker</strong></li>
+            <li>Construir no bunker</li>
+            <li>Trapaça, bug de parede ou usar conta alternativa</li>
+        </ul>
+        <div class="observation-box">
+            <strong>PUNIÇÃO:</strong> Banimento permanente por ID (Xbox) — vale também para as outras contas do mesmo aparelho. O Sentinela é automático e implacável.
+        </div>
+    </section>
+
+    <section class="card">
+        <div class="card-title"><span>📝</span> OBSERVAÇÕES IMPORTANTES</div>
+        <ul>
+            <li><strong>1. A bandeira define a base:</strong> quem levanta a bandeira é o dono, num raio de 60 m. O bot avisa quando alguém de fora se aproxima.</li>
+            <li><strong>2. Cadastro de clã:</strong> no Discord, canal <em>#vincular-clan</em> — crie o seu clã e adicione os amigos que podem entrar na sua base.</li>
+            <li><strong>3. Membros:</strong> cada um precisa fazer <em>/vincular</em> no Discord (gamertag = nome do Xbox) para receber o alerta de aproximação da base.</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <div class="card-title"><span>🚛</span> SUPORTE &amp; EVENTOS</div>
+        <ul>
+            <li><strong>Caminhão Kit Base:</strong> caminhões com material de construção e ferramentas na pista do <strong>aeroporto noroeste (NWAF)</strong>, pra ajudar no início. Depois que alguém pega, o caminhão some em <strong>1 hora</strong>: descarregue o kit na sua base.</li>
+            <li><strong>Reinício a cada 2 horas</strong> — com aviso de contagem na tela antes de cair.</li>
+            <li><strong>Loot Tier 5</strong> (as melhores armas) só na área de <strong>Tisy</strong>.</li>
+            <li><strong>Cartão do bunker:</strong> spawna na área de <strong>Tisy</strong> — quem sabe algum <strong>zumbi</strong> te ajude a achar. 🧟</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <div class="card-title"><span>❄️</span> CLIMA &amp; ESTAÇÕES</div>
+        <ul>
+            <li>O servidor roda em <strong>ciclo de estações</strong>: um período de <strong>inverno russo</strong> pesado, seguido do <strong>degelo</strong>.</li>
+            <li>O clima muda <strong>gradativamente</strong> — vai esquentando até ficar livre da neve.</li>
+            <li>Depois o ciclo volta aos poucos ao inverno. É contínuo, o ano todo.</li>
+        </ul>
+    </section>
+
+    <section class="card prohibited">
+        <div class="card-title"><span>🐺</span> DIFICULDADES DO SERVIDOR</div>
+        <ul>
+            <li><strong>Comida:</strong> tem bastante nas <strong>11 cidades do litoral</strong>. Se o plano é subir até Tisy, <strong>prepare a mochila com comida</strong>.</li>
+            <li><strong>Pesca difícil:</strong> os lagos estão congelados. Aposte em <strong>caçar animais</strong> ou montar <strong>armadilhas</strong> pra pegar raposa e coelho.</li>
+            <li><strong>Lobos em todo o mapa:</strong> fique esperto — muito boca aberta morre assim que spawna.</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <div class="card-title"><span>🔗</span> COMUNIDADE &amp; LINKS</div>
+        <div style="display: flex; flex-direction: column; gap: 15px;">
+            <a href="https://discord.gg/uBqBB7dBn9" class="link-button discord" target="_blank" rel="noopener">🚀 Nosso Discord</a>
+            <a href="https://chat.whatsapp.com/C6DPZ8PdDUX3OarZeOzUTt" class="link-button whatsapp-chat" target="_blank" rel="noopener">💬 Grupo da Comunidade (WhatsApp)</a>
+            <a href="https://wellyton5.github.io/arsenal-veteranos/" class="link-button arsenal" target="_blank" rel="noopener">🔫 Arsenal — armas por tier</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 Brasil Veteranos · Sentinela DayZ Xbox.<br>
+        Proteção 24/7 garantida.
+    </footer>
+
+</div>
+
+</body>
+</html>
