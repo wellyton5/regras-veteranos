@@ -99,6 +99,9 @@
     .permitted li::before { content: "✓"; position: absolute; left: 0; color: var(--success-green); font-weight: bold; }
     .prohibited li::before { content: "✕"; position: absolute; left: 0; color: var(--primary-red); font-weight: bold; }
 
+    .regras li { padding-left: 0; margin-bottom: 16px; }
+    li strong { color: var(--text-main); }
+
     .observation-box {
         background: rgba(255, 62, 62, 0.06);
         border-radius: 12px; padding: 15px; margin-top: 15px;
@@ -144,48 +147,71 @@
         <p class="subtitle">DayZ Xbox · Sentinela 24/7</p>
     </header>
 
-    <section class="card permitted">
-        <div class="card-title"><span>🛡️</span> ESTÁ PERMITIDO</div>
-        <ul>
-            <li>Construção livre em qualquer lugar do mapa (menos no bunker)</li>
-            <li>Raid tático — só aos sábados, das 20h às 22h</li>
-            <li>Horta <strong>dentro da sua base</strong> (ou da base do seu clã)</li>
-            <li>Fogueira <strong>dentro da sua base</strong>, à vontade</li>
-            <li>Roletar cadeado</li>
-        </ul>
-    </section>
-
     <section class="card prohibited">
-        <div class="card-title"><span>⚔️</span> ESTÁ PROIBIDO</div>
+        <div class="card-title"><span>🌊</span> COMO FUNCIONA A PUNIÇÃO</div>
         <ul>
-            <li>Fazer horta <strong>fora</strong> de qualquer base</li>
-            <li>Fogueira fora da base — 2 fogueiras no intervalo de 10 minutos</li>
-            <li>Glitch com emotes, skywalk ou andar debaixo do mapa</li>
-            <li>Desconectar <strong>dentro do bunker</strong></li>
-            <li>Construir no bunker</li>
-            <li>Trapaça, bug de parede ou usar conta alternativa</li>
+            <li><strong>Mar Morto:</strong> quem quebra uma regra fica de castigo até o próximo reinício e <strong>acorda no meio do mar</strong>, perto da ilha Skalisty, e volta nadando.</li>
+            <li><strong>Mar Morto LONGE:</strong> acorda no canto do mapa, uns <strong>55 minutos nadando</strong> até a costa.</li>
+            <li><strong>Hack é banimento para sempre</strong>, e vale também para as outras contas do mesmo Xbox ou PC.</li>
         </ul>
         <div class="observation-box">
-            <strong>PUNIÇÃO:</strong> Banimento permanente por ID (Xbox) — vale também para as outras contas do mesmo aparelho. O Sentinela é automático e implacável.
+            O Sentinela vigia o servidor 24 horas e aplica as regras sozinho. As regras completas também estão no canal <strong>📌 REGRAS</strong> do Discord.
         </div>
     </section>
 
     <section class="card">
-        <div class="card-title"><span>📝</span> OBSERVAÇÕES IMPORTANTES</div>
+        <div class="card-title"><span>📜</span> REGRAS DO SERVIDOR</div>
+        <ul class="regras">
+            <li><strong>1. Raid tático:</strong> permitido entrar na base dos outros pela mecânica do jogo (caminhão, escada humana, pular o muro) e desmontar por dentro.
+                <br>• <strong>Tenda ou barril</strong> a até 45 m da bandeira de uma base que não é sua nem do seu clã: <strong>Mar Morto</strong>.
+                <br>• <strong>Parede ou torre</strong> (ou o kit) a até 45 m da bandeira dos outros: <strong>Mar Morto</strong>. No raid de sábado pode: montar torre para pular o muro é tática.
+                <br>• <strong>Portão</strong> na base dos outros (é tomar a base com cadeado): <strong>Mar Morto LONGE</strong>.</li>
+            <li><strong>2. Construção:</strong> pode construir em qualquer lugar do mapa.</li>
+            <li><strong>3. Base e bandeiras:</strong> quem levanta a bandeira é o dono da base; cada jogador pode ter <strong>até 3 bases</strong>.
+                <br>• <strong>Alcance de 45 m</strong> em volta do mastro: quando alguém de fora entra, o dono e o clã recebem o alarme no Discord.
+                <br>• <strong>Bandeiras a 70 m uma da outra.</strong> Base com bandeira a menos de 70 m de uma base mais antiga fica <strong>sem efeito</strong>: não protege e não dispara alarme.
+                <br>• <strong>Base grande precisa de vários mastros.</strong> A bandeira só segura as peças a até 60 m do mastro; o que fica mais longe desaparece com o tempo e fica sem a proteção do Sentinela. Construa mais mastros, quantos precisar, a até 120 m de outro mastro da base e com obra sua em volta. Cada mastro novo ganha uma bandeira e não conta nas 3 bases.</li>
+            <li><strong>4. Trapaça:</strong> usar bug, app de hack, glitch de parede ou outra conta para escapar de punição dá <strong>banimento</strong>.</li>
+            <li><strong>5. Fogueira e horta:</strong>
+                <br>• <strong>Fogueira pode em qualquer lugar do mapa</strong>, dentro ou fora da base. Só é proibido perto da base dos outros: a até 60 m de uma obra ou bandeira de outro jogador (que não seja do seu clã), <strong>2 fogueiras em 10 minutos</strong> ou <strong>3 em 1 hora</strong> levam ao Mar Morto; <strong>a até 15 m, a primeira já leva</strong>.
+                <br>• <strong>Horta só dentro da sua base</strong> (ou do seu clã). Fora dela: Mar Morto.</li>
+            <li><strong>6. Punição = Mar Morto:</strong> horta fora da base, fogueira perto de base rival, tenda, barril ou construção em base rival, glitch, truque do skywalk e deslogar em base rival.
+                <br>Vão para o <strong>Mar Morto LONGE</strong>: portão em base rival, mudar a senha do cadeado de base rival, matar quem acabou de nascer no litoral e quem repete o mesmo erro.
+                <br>Ofensa fica com a equipe e pode dar castigo. <strong>Hack é banimento para sempre.</strong></li>
+            <li><strong>7. Clima e reinícios:</strong> o clima muda sozinho ao longo dos dias, do degelo ao congelamento. O servidor reinicia a cada 2 horas; o próximo horário aparece no canal <em>servidor</em> do Discord.</li>
+            <li><strong>8. Caminhão Kit Base:</strong> nasce com o kit de construção na carga.
+                <br>• <strong>Verde-oliva:</strong> 5 vagas na pista do <strong>NWAF</strong> (saiu um, outro nasce na vaga em 10 minutos).
+                <br>• <strong>Azuis:</strong> 20 espalhados pelo mapa.
+                <br>• Eles <strong>se revezam a cada 2 reinícios</strong>. No reinício da troca, o caminhão <strong>some onde estiver, com tudo dentro</strong>, até dentro da base: descarregue antes.
+                <br>• <strong>1 laranja</strong> perto da ponte da ilha da prisão <strong>nunca some</strong> no reinício.</li>
+            <li><strong>9. Proibido DESLOGAR em base rival:</strong> sair do jogo a até 45 m da bandeira de uma base que não é sua nem do seu clã leva ao Mar Morto. O Sentinela espera 2 minutos para ter certeza de que não foi a queda do reinício (essa não conta). Fez de novo: Mar Morto LONGE.</li>
+            <li><strong>10. Entrar no clã de uma base:</strong> baixe e suba a bandeira da base e, em até 10 minutos, <strong>bata continência</strong> (em pé e de mãos vazias) a até 6 m do mastro. O líder recebe o pedido no privado do Discord com <strong>SIM</strong> e <strong>NÃO</strong>. Até o líder aceitar, deslogar dentro da base continua sendo Mar Morto.</li>
+            <li><strong>11. Matar no spawn:</strong> matar quem acabou de nascer (até 10 minutos) perto da praia (até 1 km do mar) é covardia. <strong>3 no spawn em 2 horas: Mar Morto LONGE.</strong> Se ele te atacou primeiro, não conta.</li>
+            <li><strong>12. Reincidência:</strong> já foi punido e cometeu o mesmo erro de novo? Vai direto para o <strong>Mar Morto LONGE</strong>. Não zera com o tempo.</li>
+            <li><strong>13. Proibido mudar a senha do cadeado</strong> de uma base que não é sua nem do seu clã: <strong>Mar Morto LONGE</strong>.</li>
+            <li><strong>14. Madrugada (23h às 08h):</strong> nesse horário ninguém chega perto de base dos outros. Entrou em base onde não é cadastrado (ou a menos de 20 m da bandeira): <strong>Mar Morto LONGE</strong>, mesmo só de passagem.</li>
+            <li><strong>15. Explosivo em base alheia:</strong> só com o raid no ar. Explosivo, claymore ou bomba caseira na base dos outros fora do raid: <strong>Mar Morto</strong>.</li>
+        </ul>
+    </section>
+
+    <section class="card permitted">
+        <div class="card-title"><span>🚩</span> RAID E BANDEIRAS</div>
         <ul>
-            <li><strong>1. A bandeira define a base:</strong> quem levanta a bandeira é o dono, num raio de 60 m. O bot avisa quando alguém de fora se aproxima.</li>
-            <li><strong>2. Cadastro de clã:</strong> no Discord, canal <em>#vincular-clan</em> — crie o seu clã e adicione os amigos que podem entrar na sua base.</li>
-            <li><strong>3. Membros:</strong> cada um precisa fazer <em>/vincular</em> no Discord (gamertag = nome do Xbox) para receber o alerta de aproximação da base.</li>
+            <li><strong>Raid de sábado, das 20h às 22h:</strong> na base do clã rival, baixe a bandeira do mastro (ou desmonte o mastro com ela). Ela foi <strong>tomada</strong>.</li>
+            <li>Leve a bandeira para a <strong>sua base</strong> e erga num mastro dela: vira <strong>troféu do seu clã</strong> e entra no ranking de bandeiras.</li>
+            <li>Troféus de outros raids que você baixar <strong>voltam para o clã de onde foram tomados</strong>; não viram troféu seu.</li>
+            <li>Teve a bandeira tomada? 1 hora depois o Sentinela oferece a <strong>bandeira branca</strong>, que mantém a base viva. Para ter a sua de volta, raide quem a guarda.</li>
+            <li><strong>Só o raid vale:</strong> bandeira de outro clã erguida sem ter sido tomada no raid é proibida; o clã tem 24 h para trocar.</li>
+            <li>Sem gamertag vinculada no Discord, o Sentinela não avisa nem entrega bandeira.</li>
         </ul>
     </section>
 
     <section class="card">
-        <div class="card-title"><span>🚛</span> SUPORTE &amp; EVENTOS</div>
+        <div class="card-title"><span>📝</span> NO DISCORD</div>
         <ul>
-            <li><strong>Caminhão Kit Base:</strong> caminhões com material de construção e ferramentas na pista do <strong>aeroporto noroeste (NWAF)</strong>, pra ajudar no início. Depois que alguém pega, o caminhão some em <strong>1 hora</strong>: descarregue o kit na sua base.</li>
-            <li><strong>Reinício a cada 2 horas</strong> — com aviso de contagem na tela antes de cair.</li>
+            <li><strong>Vincule o seu Xbox</strong> no canal <em>#vincular-gametag-individual</em>: sem isso você não recebe alarme da base, pedido de clã nem bandeira.</li>
+            <li><strong>Clã:</strong> no canal <em>#vincular-clan</em>, crie o seu clã e adicione os amigos.</li>
             <li><strong>Loot Tier 5</strong> (as melhores armas) só na área de <strong>Tisy</strong>.</li>
-            <li><strong>Cartão do bunker:</strong> spawna na área de <strong>Tisy</strong> — quem sabe algum <strong>zumbi</strong> te ajude a achar. 🧟</li>
         </ul>
     </section>
 
